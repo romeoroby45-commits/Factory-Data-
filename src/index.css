@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: #262626;
+  }
+  
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    color-scheme: dark;
+  }
+
+  /* Numeric tabular figures for data alignment */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-family: 'JetBrains Mono', 'Cairo', monospace;
+  }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Primary Button Design Rule */
+.btn-primary {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056B3;
+}
+
+.btn-primary:active {
+  background-color: #004494;
+  transform: translateY(1px);
+}
+
+/* Secondary Button Design Rule */
+.btn-secondary {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+  border: 1px solid #333333;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #262626;
+  border-color: #007BFF;
+}
+
+/* Card Surface Rule */
+.card-dark {
+  background-color: #121212;
+  border: 1px solid #222222;
+}
+
+/* Table styling */
+.table-dark th {
+  background-color: #0a0a0a;
+  color: #B0B0B0;
+  border-bottom: 1px solid #222222;
+  font-weight: 600;
+}
+
+.table-dark td {
+  border-bottom: 1px solid #1a1a1a;
+  color: #FFFFFF;
+}
+
+.table-dark tr:hover td {
+  background-color: #161616;
+}
+
+/* Print Styles for Official Factory Reports */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  .card-dark {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
+    color: #000000 !important;
+  }
+
+  .table-dark th {
+    background-color: #F0F0F0 !important;
+    color: #000000 !important;
+    border: 1px solid #DDDDDD !important;
+  }
+
+  .table-dark td {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1px solid #EEEEEE !important;
+  }
+
+  .text-white {
+    color: #000000 !important;
+  }
+
+  .text-zinc-400, .text-neutral-400, .text-gray-400 {
+    color: #555555 !important;
+  }
+}

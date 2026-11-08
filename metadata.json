@@ -1,0 +1,6 @@
+{
+  "name": "Factory Data – Factory Management System",
+  "description": "نظام متكامل واحترافي لإدارة المصانع والحسابات والموظفين والرواتب والمخزون والمعدات والماكينات والتقارير المالية بتخزين محلي آمن.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
